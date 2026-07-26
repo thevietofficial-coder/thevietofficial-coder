@@ -15,12 +15,12 @@
 
 I'm **Bùi Hoàng Việt**, building practical AI applications with a focus on **LLMs, Retrieval-Augmented Generation (RAG), and Computer Vision**.
 
-I'm currently learning **Deep Learning, NLP, LLMs, AI Agents, and MLOps**, and I care about turning AI ideas into real, working applications rather than isolated experiments.
+I'm currently training as an AI Engineer through **VinUni's AI20K program (Cohort 4)**, working hands-on with **Deep Learning, NLP, LLMs, AI Agents, and MLOps**, and I care about turning AI ideas into real, working applications rather than isolated experiments.
 
 ## Now
 
-- Working on AI applications, LLMs, RAG systems, and Computer Vision.
-- Learning Deep Learning, NLP, LLMs, AI Agents, and MLOps.
+- Training in VinUni's AI20K AI Engineering program (Cohort 4), with hands-on exercises in LLM APIs, RAG, and agentic workflows.
+- Building AI applications, LLMs, RAG systems, and Computer Vision projects alongside the curriculum.
 - Open to collaborating on AI, Machine Learning, and Generative AI projects.
 
 ## Technical toolkit
