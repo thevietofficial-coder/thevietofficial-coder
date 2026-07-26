@@ -1,145 +1,57 @@
 <p align="center">
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/github-profile-banner-mobile.svg" />
-    <img src="assets/github-profile-banner-animated.gif" alt="Animated banner: Nguyễn Bùi Tấn Dũng, Robotics and AI graduate building practical AI systems" width="100%" />
-  </picture>
+  <img src="assets/github-profile-banner-animated.gif" alt="Animated banner: Bùi Hoàng Việt, AI Engineer building LLM, RAG, and Computer Vision applications" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/tandung060604-prog"><img src="https://img.shields.io/badge/GitHub-tandung060604--prog-0B1220?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub profile" /></a>
-  <a href="https://c2-app-028.up.railway.app"><img src="https://img.shields.io/badge/HaUI_AI-Live_Demo-0B1220?style=flat-square&logo=railway&logoColor=A78BFA" alt="Open the HaUI Admission AI live demo" /></a>
-  <img src="https://img.shields.io/badge/Seeking-Internship_%2F_Fresher-0B1220?style=flat-square&logo=target&logoColor=38BDF8" alt="Seeking AI and robotics internship or fresher opportunities" />
+  <a href="https://github.com/thevietofficial-coder"><img src="https://img.shields.io/badge/GitHub-thevietofficial--coder-0B1220?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub profile" /></a>
+  <img src="https://img.shields.io/badge/Open_to-Collaboration_%2F_Opportunities-0B1220?style=flat-square&logo=target&logoColor=38BDF8" alt="Open to AI, ML, and Generative AI collaboration" />
 </p>
 
 <p align="center">
-  <img src="assets/now-status.gif" alt="Animated current focus: building grounded RAG systems, learning Camunda 7 workflows, and integrating AI with robotics" width="560" />
+  <img src="assets/now-status.gif" alt="Animated current focus: building LLM and RAG applications, learning AI agents and MLOps, exploring computer vision" width="560" />
 </p>
 
 ## About me
 
-I'm **Tấn Dũng (Haru)**, a recent **Robotics and Artificial Intelligence** graduate focused on turning AI concepts into practical, testable products.
+I'm **Bùi Hoàng Việt**, building practical AI applications with a focus on **LLMs, Retrieval-Augmented Generation (RAG), and Computer Vision**.
 
-I am currently learning and building with **retrieval-augmented generation (RAG), LLM applications, AI agents, and robotics**. I care about traceable data sources, citations, evaluation, and refusal behavior when the available evidence is insufficient—especially for systems where an unsupported answer would be worse than no answer.
-
-My goal is to grow from an AI Application Developer into an **AI/Robotics Engineer** who can connect reliable AI software with real-world automation and robotic systems.
+I'm currently learning **Deep Learning, NLP, LLMs, AI Agents, and MLOps**, and I care about turning AI ideas into real, working applications rather than isolated experiments.
 
 ## Now
 
-- Improving RAG applications with citations, evaluation, and grounded answers.
-- Learning practical BPMN and Camunda 7 workflow automation.
-- Exploring how AI services connect with embedded and mobile robotics.
-
-## What I'm working on
-
-- **RAG applications** — building production-oriented retrieval and answer-generation workflows.
-- **LLM evaluation** — checking responses with citations, test cases, and groundedness criteria.
-- **AI agents** — exploring tool use, orchestration, guardrails, and human-in-the-loop patterns.
-- **Workflow automation** — learning BPMN and Camunda 7 through hands-on systems.
-- **Robotics integration** — connecting perception and AI services with embedded/mobile robots.
-- **Engineering practice** — improving testing, deployment, observability, and maintainability.
+- Working on AI applications, LLMs, RAG systems, and Computer Vision.
+- Learning Deep Learning, NLP, LLMs, AI Agents, and MLOps.
+- Open to collaborating on AI, Machine Learning, and Generative AI projects.
 
 ## Technical toolkit
 
-<img src="assets/toolkit-cards/toolkit-ai-llm.png" alt="AI and LLM skills: Python, RAG, LLM applications, prompt engineering, AI agents, embeddings, vector databases, and Ragas" width="100%" />
+<img src="assets/toolkit-cards/toolkit-ai-ml.png" alt="AI and Machine Learning skills: Python, PyTorch, TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, OpenCV, and CUDA" width="100%" />
 
-<img src="assets/toolkit-cards/toolkit-backend-data.png" alt="Backend and data skills: FastAPI, REST APIs, PostgreSQL, Pydantic, SQLAlchemy, and Python virtual environments" width="100%" />
+<img src="assets/toolkit-cards/toolkit-languages-web.png" alt="Languages and web skills: C++, Java, JavaScript, Next.js, and WordPress" width="100%" />
 
-<img src="assets/toolkit-cards/toolkit-frontend.png" alt="Frontend skills: React, Vite, Next.js, TypeScript, JavaScript, HTML, and CSS" width="100%" />
-
-<img src="assets/toolkit-cards/toolkit-tools-quality.png" alt="Tools, quality and deployment skills: Git, GitHub, Docker, Railway, Postman, VS Code, Codex, pytest, Camunda 7, and BPMN" width="100%" />
-
-<img src="assets/toolkit-cards/toolkit-robotics.png" alt="Robotics skills: OpenCV, PyTorch, YOLOv8, DeepSORT, ESP32-CAM, Arduino, ROS and Gazebo, MATLAB, PID and LQR" width="100%" />
-
-## Featured project
-
-### HaUI Admission AI
-
-An admissions assistant for Hanoi University of Industry that helps applicants and parents find information about admission methods, programs, benchmark scores, tuition, scholarships, application documents, and frequently asked questions.
-
-**Status:** Completed
-
-<img src="assets/project-images/haui-admission-ai-architecture.svg" alt="Architecture diagram for HaUI Admission AI showing official sources, RAG retrieval, FastAPI, PostgreSQL, React, citations, and human handoff" width="100%" />
-
-**Core architecture**
-
-- React/Vite frontend with a FastAPI backend and PostgreSQL persistence.
-- A dedicated RAG service over public, official admissions sources.
-- Retrieval and answers scoped by admission year.
-- Advisor/admin workflows for document management, conversation history, and handoff tickets.
-
-**What makes it useful**
-
-- Returns source citations with answers so users can verify important details.
-- Reduces unsupported answers through grounded retrieval and refusal behavior.
-- Escalates questions that need deeper guidance to a human advisor.
-- Keeps admissions content manageable through an advisor/admin dashboard.
-
-**Links:** [Live demo](https://c2-app-028.up.railway.app) · [Source repository](https://github.com/tandung060604-prog/HaUi-Admission-Chatbot)
-
-> The demo endpoint returned the admissions interface during the July 22, 2026 audit. Availability may vary; this is not an uptime guarantee.
-
-## Selected projects
-
-### [Camunda Quest Academy](https://github.com/tandung060604-prog/Camunda-Quest-Academy) — Completed
-
-A local-first learning application for Camunda 7 and BPMN with structured lessons, quizzes, workflow simulation, assessments, and certificate verification.
-
-**Stack:** Python · FastAPI · SQLite · SQLAlchemy · Jinja2 · Camunda 7 · BPMN · pytest
-
-### [Human-Following Mobile Robot](https://github.com/tandung060604-prog/Human-Following-Robot) — Prototype
-
-An individual robotics project that detects and tracks a person, then sends navigation commands to an ESP32-CAM mobile robot over Wi-Fi.
-
-**Stack:** Python · YOLOv8 · DeepSORT · OpenCV · ESP32-CAM · Arduino/C++ · ROS · Gazebo
-
-### [Robot Vision System](https://github.com/tandung060604-prog/Robot-Vision-System) — Graduation Project
-
-A real-time visual-perception system for a mobile robot. It runs an optimized TensorFlow Lite model over a camera stream and reports detected objects, locations, confidence, and live FPS for edge-ready robot deployment.
-
-**Stack:** Python · TensorFlow Lite · OpenCV · int8 quantization · real-time object detection
-
-**Links:** [Product demo on YouTube](https://www.youtube.com/watch?v=_r1kk5_Yni0) · [Source repository](https://github.com/tandung060604-prog/Robot-Vision-System)
-
-### [ESP32 Self-Balancing Robot](https://github.com/tandung060604-prog/Esp32-self-balancing-robot) — Prototype
-
-A two-wheeled robot exploring PID and LQR control, MPU6050 sensor fusion with a Kalman filter, and browser-based control over Wi-Fi.
-
-**Stack:** ESP32 · Arduino/C++ · PID · LQR · Kalman filter · WebSocket · MATLAB/Simulink
-
-### [NexaRead AI](https://github.com/tandung060604-prog/NexaRead-AI) — Milestones 7–8 Implemented Locally
-
-An AI-powered reading and knowledge assistant that turns PDF, DOCX, EPUB, and public article URLs into searchable, source-grounded insights. It combines a responsive reader, structured document processing, and evidence-aware document chat with validated citations.
-
-**Highlights:** Secure multi-format ingestion · asynchronous extraction · reading progress, highlights, bookmarks, and notes · Vietnamese/English localization · hybrid PostgreSQL/pgvector retrieval with reranking · grounded no-answer behavior · RAG evaluation · health checks, safe logs, rate limits, and deployment automation.
-
-**Stack:** Next.js · React · TypeScript · FastAPI · PostgreSQL/pgvector · Redis · Dramatiq · MinIO · Docker
-
-> Milestones 7–8 are implemented and validated locally. The project has not been deployed to staging or production; OCR, multi-document chat, crawling, web search, autonomous agents, and PPTX remain outside the current scope.
+<img src="assets/toolkit-cards/toolkit-tools-hardware.png" alt="Tools, design and hardware skills: Git, GitHub, Photoshop, Canva, and Raspberry Pi" width="100%" />
 
 ## GitHub activity
 
-Explore my [public repositories](https://github.com/tandung060604-prog?tab=repositories) and [recent public activity](https://github.com/tandung060604-prog?tab=overview). I prefer documented, inspectable project evidence over using contribution counts as a proxy for experience.
+Explore my [public repositories](https://github.com/thevietofficial-coder?tab=repositories) and [recent public activity](https://github.com/thevietofficial-coder?tab=overview).
 
 ## Resume / CV
 
-Public English and Vietnamese CVs are available below.
-
 <p>
-  <a href="resume/Nguyen-Bui-Tan-Dung-CV-EN.pdf"><img src="https://img.shields.io/badge/View_English_CV-Open-0B1220?style=for-the-badge&logo=readme&logoColor=38BDF8" alt="View Nguyễn Bùi Tấn Dũng's English CV" /></a>
-  <a href="resume/Nguyen-Bui-Tan-Dung-CV-VI.pdf"><img src="https://img.shields.io/badge/View_Vietnamese_CV-Open-0B1220?style=for-the-badge&logo=readme&logoColor=A78BFA" alt="View Nguyễn Bùi Tấn Dũng's Vietnamese CV" /></a>
+  <a href="resume/Bui-Hoang-Viet-CV.pdf"><img src="https://img.shields.io/badge/View_CV-Open-0B1220?style=for-the-badge&logo=readme&logoColor=38BDF8" alt="View Bùi Hoàng Việt's CV" /></a>
 </p>
 
 ## Let's connect
 
-I'm open to internships, fresher opportunities, research collaboration, and practical AI/robotics projects.
+I'm open to internships, collaboration, and practical AI/ML/Generative AI projects.
 
 <p>
-  <a href="mailto:tandung060604@gmail.com"><img src="https://img.shields.io/badge/Email-tandung060604%40gmail.com-0B1220?style=flat-square&logo=gmail&logoColor=22D3EE" alt="Email Tấn Dũng" /></a>
-  <a href="https://www.instagram.com/_saxichuongduong_/"><img src="https://img.shields.io/badge/Instagram-%40_saxichuongduong_-0B1220?style=flat-square&logo=instagram&logoColor=A78BFA" alt="Instagram Tấn Dũng" /></a>
-  <img src="https://img.shields.io/badge/Discord-.harunguyen-0B1220?style=flat-square&logo=discord&logoColor=7289DA" alt="Discord .harunguyen" />
-  <a href="https://github.com/tandung060604-prog"><img src="https://img.shields.io/badge/GitHub-tandung060604--prog-0B1220?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub Tấn Dũng" /></a>
+  <a href="mailto:thevietofficial@gmail.com"><img src="https://img.shields.io/badge/Email-thevietofficial%40gmail.com-0B1220?style=flat-square&logo=gmail&logoColor=22D3EE" alt="Email Bùi Hoàng Việt" /></a>
+  <a href="https://www.linkedin.com/in/buihoangviet-ai/"><img src="https://img.shields.io/badge/LinkedIn-buihoangviet--ai-0B1220?style=flat-square&logo=linkedin&logoColor=38BDF8" alt="LinkedIn Bùi Hoàng Việt" /></a>
+  <a href="https://www.instagram.com/ho_ngviet.04/"><img src="https://img.shields.io/badge/Instagram-%40ho__ngviet.04-0B1220?style=flat-square&logo=instagram&logoColor=A78BFA" alt="Instagram Bùi Hoàng Việt" /></a>
+  <a href="https://www.tiktok.com/@thevietofficial"><img src="https://img.shields.io/badge/TikTok-%40thevietofficial-0B1220?style=flat-square&logo=tiktok&logoColor=22D3EE" alt="TikTok thevietofficial" /></a>
+  <a href="https://www.youtube.com/@englishwithvictor04"><img src="https://img.shields.io/badge/YouTube-%40englishwithvictor04-0B1220?style=flat-square&logo=youtube&logoColor=FF0000" alt="YouTube englishwithvictor04" /></a>
+  <a href="https://github.com/thevietofficial-coder"><img src="https://img.shields.io/badge/GitHub-thevietofficial--coder-0B1220?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub thevietofficial-coder" /></a>
 </p>
 
-<sub>Ha Noi, Vietnam</sub>
-
-<p align="center"><sub>Building useful AI systems, one experiment at a time.</sub></p>
+<p align="center"><sub>Turning AI ideas into real-world applications.</sub></p>

@@ -10,9 +10,9 @@ OUTPUT = ROOT / "assets" / "now-status.gif"
 W, H = 560, 52
 FONT = "C:/Windows/Fonts/segoeuib.ttf"
 MESSAGES = (
-    "Now: Building grounded RAG systems",
-    "Now: Learning Camunda 7 workflows",
-    "Now: Integrating AI with robotics",
+    "Now: Building AI apps with LLMs & RAG",
+    "Now: Learning AI Agents & MLOps",
+    "Now: Exploring Computer Vision projects",
 )
 
 

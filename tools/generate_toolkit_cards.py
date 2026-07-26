@@ -12,39 +12,25 @@ W, H = 1080, 190
 
 CARDS = (
     (
-        "toolkit-ai-llm.png",
-        "AI & LLM",
-        "RETRIEVAL, EVALUATION, AND AGENTIC APPLICATIONS",
-        ("Python", "RAG", "LLM Apps", "Prompt Engineering", "AI Agents", "Embeddings", "Vector DBs", "Ragas"),
+        "toolkit-ai-ml.png",
+        "AI & Machine Learning",
+        "MODELS, RETRIEVAL, AND GENERATIVE AI APPLICATIONS",
+        ("Python", "PyTorch", "TensorFlow", "Keras", "scikit-learn", "NumPy", "Pandas", "Matplotlib", "OpenCV", "CUDA"),
         "#22d3ee",
     ),
     (
-        "toolkit-backend-data.png",
-        "Backend & Data",
-        "API DESIGN, PERSISTENCE, AND RELIABLE DATA FLOWS",
-        ("FastAPI", "REST APIs", "PostgreSQL", "Pydantic", "SQLAlchemy", "Python venv"),
+        "toolkit-languages-web.png",
+        "Languages & Web",
+        "CORE LANGUAGES AND WEB DELIVERY",
+        ("C++", "Java", "JavaScript", "Next.js", "WordPress"),
         "#a78bfa",
     ),
     (
-        "toolkit-frontend.png",
-        "Frontend",
-        "INTERFACES FOR PRACTICAL AI PRODUCTS",
-        ("React", "Vite", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS"),
+        "toolkit-tools-hardware.png",
+        "Tools, Design & Hardware",
+        "BUILD, VERSION, DESIGN, AND DEPLOY TO THE EDGE",
+        ("Git", "GitHub", "Photoshop", "Canva", "Raspberry Pi"),
         "#f59e0b",
-    ),
-    (
-        "toolkit-tools-quality.png",
-        "Tools, Quality & Deployment",
-        "BUILD, TEST, AUTOMATE, AND SHIP",
-        ("Git", "GitHub", "Docker", "Railway", "Postman", "VS Code", "Codex", "pytest", "Camunda 7", "BPMN"),
-        "#38bdf8",
-    ),
-    (
-        "toolkit-robotics.png",
-        "Robotics",
-        "COMPUTER VISION, EMBEDDED CONTROL, AND SIMULATION",
-        ("OpenCV", "PyTorch", "YOLOv8", "DeepSORT", "ESP32 / CAM", "Arduino", "ROS / Gazebo", "MATLAB", "PID / LQR"),
-        "#2dd4bf",
     ),
 )
 

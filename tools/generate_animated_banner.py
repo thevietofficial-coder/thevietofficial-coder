@@ -54,15 +54,15 @@ def frame(index: int) -> Image.Image:
     draw.text((origin[0] - 7, origin[1] - 10), "AI", font=text_font(13), fill="white")
 
     # Profile copy and a small moving scanner on the lower line.
-    draw.text((58, 59), "TẤN DŨNG  /  HARU", font=text_font(34), fill="#f8fafc")
-    draw.text((58, 111), "Robotics & Artificial Intelligence", font=text_font(20), fill="#67e8f9")
-    draw.text((58, 143), "Building practical, reliable AI systems", font=text_font(18), fill="#cbd5e1")
+    draw.text((58, 59), "BÙI HOÀNG VIỆT", font=text_font(34), fill="#f8fafc")
+    draw.text((58, 111), "AI / LLM / RAG Engineer", font=text_font(20), fill="#67e8f9")
+    draw.text((58, 143), "Turning AI ideas into real-world systems", font=text_font(18), fill="#cbd5e1")
     draw.rounded_rectangle((58, 202, 318, 234), radius=16, outline="#1e506c", width=1)
     scanner = 65 + int(((phase * 1.35) % 1) * 246)
     draw.line((scanner, 207, scanner, 229), fill="#22d3ee", width=2)
-    draw.text((74, 209), "RAG  •  LLMs  •  ROBOTICS", font=text_font(12), fill="#94a3b8")
+    draw.text((74, 209), "RAG  •  LLMs  •  VISION", font=text_font(12), fill="#94a3b8")
 
-    draw.text((728, 252), "tandung060604-prog", font=text_font(12), fill="#64748b")
+    draw.text((728, 252), "thevietofficial-coder", font=text_font(12), fill="#64748b")
     return image
 
 
