@@ -1,4 +1,9 @@
 <p align="center">
+  <img src="assets/ai-illustration-animated.gif" alt="Animated neural network illustration" width="48%" />
+  <img src="assets/coding-animation.gif" alt="Animated code editor typing a RAG pipeline" width="48%" />
+</p>
+
+<p align="center">
   <img src="assets/github-profile-banner-animated.gif" alt="Animated banner: Bùi Hoàng Việt, AI Engineer building LLM, RAG, and Computer Vision applications" width="100%" />
 </p>
 
