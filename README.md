@@ -33,6 +33,15 @@ I'm currently learning **Deep Learning, NLP, LLMs, AI Agents, and MLOps**, and I
 
 ## GitHub activity
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=thevietofficial-coder&show_icons=true&hide_border=true&count_private=true&bg_color=0B1220&title_color=38BDF8&text_color=E2E8F0&icon_color=22D3EE" alt="Bùi Hoàng Việt's GitHub stats" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thevietofficial-coder&layout=compact&hide_border=true&bg_color=0B1220&title_color=38BDF8&text_color=E2E8F0" alt="Bùi Hoàng Việt's most used languages" height="165" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=thevietofficial-coder&hide_border=true&background=0B1220&stroke=38BDF8&ring=22D3EE&fire=A78BFA&currStreakLabel=38BDF8" alt="Bùi Hoàng Việt's GitHub streak" width="100%" />
+</p>
+
 Explore my [public repositories](https://github.com/thevietofficial-coder?tab=repositories) and [recent public activity](https://github.com/thevietofficial-coder?tab=overview).
 
 ## Resume / CV
@@ -48,10 +57,16 @@ I'm open to internships, collaboration, and practical AI/ML/Generative AI projec
 <p>
   <a href="mailto:thevietofficial@gmail.com"><img src="https://img.shields.io/badge/Email-thevietofficial%40gmail.com-0B1220?style=flat-square&logo=gmail&logoColor=22D3EE" alt="Email Bùi Hoàng Việt" /></a>
   <a href="https://www.linkedin.com/in/buihoangviet-ai/"><img src="https://img.shields.io/badge/LinkedIn-buihoangviet--ai-0B1220?style=flat-square&logo=linkedin&logoColor=38BDF8" alt="LinkedIn Bùi Hoàng Việt" /></a>
+  <a href="https://github.com/thevietofficial-coder"><img src="https://img.shields.io/badge/GitHub-thevietofficial--coder-0B1220?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub thevietofficial-coder" /></a>
+</p>
+
+<details>
+<summary>Also find me on</summary>
+<p>
   <a href="https://www.instagram.com/ho_ngviet.04/"><img src="https://img.shields.io/badge/Instagram-%40ho__ngviet.04-0B1220?style=flat-square&logo=instagram&logoColor=A78BFA" alt="Instagram Bùi Hoàng Việt" /></a>
   <a href="https://www.tiktok.com/@thevietofficial"><img src="https://img.shields.io/badge/TikTok-%40thevietofficial-0B1220?style=flat-square&logo=tiktok&logoColor=22D3EE" alt="TikTok thevietofficial" /></a>
   <a href="https://www.youtube.com/@englishwithvictor04"><img src="https://img.shields.io/badge/YouTube-%40englishwithvictor04-0B1220?style=flat-square&logo=youtube&logoColor=FF0000" alt="YouTube englishwithvictor04" /></a>
-  <a href="https://github.com/thevietofficial-coder"><img src="https://img.shields.io/badge/GitHub-thevietofficial--coder-0B1220?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub thevietofficial-coder" /></a>
 </p>
+</details>
 
 <p align="center"><sub>Turning AI ideas into real-world applications.</sub></p>
