@@ -1,4 +1,7 @@
-"""Render clean, flat horizontal toolkit cards for the GitHub profile README."""
+"""Render animated horizontal toolkit cards for the GitHub profile README.
+
+Each card's skill tags pop in one by one, hold fully revealed, then loop.
+"""
 
 from pathlib import Path
 
@@ -12,21 +15,21 @@ W, H = 1080, 190
 
 CARDS = (
     (
-        "toolkit-ai-ml.png",
+        "toolkit-ai-ml.gif",
         "AI & Machine Learning",
         "MODELS, RETRIEVAL, AND GENERATIVE AI APPLICATIONS",
         ("Python", "PyTorch", "TensorFlow", "Keras", "scikit-learn", "NumPy", "Pandas", "Matplotlib", "OpenCV"),
         "#22d3ee",
     ),
     (
-        "toolkit-languages-web.png",
+        "toolkit-languages-web.gif",
         "Languages & Web",
         "CORE LANGUAGES AND WEB DELIVERY",
         ("C++", "Java", "JavaScript", "Next.js", "WordPress"),
         "#a78bfa",
     ),
     (
-        "toolkit-tools-hardware.png",
+        "toolkit-tools-hardware.gif",
         "Tools, Design & Hardware",
         "BUILD, VERSION, DESIGN, AND DEPLOY TO THE EDGE",
         ("Git", "GitHub", "Photoshop", "Canva", "Raspberry Pi"),
@@ -43,7 +46,7 @@ def tag_width(draw: ImageDraw.ImageDraw, value: str, tag_font: ImageFont.FreeTyp
     return int(draw.textbbox((0, 0), value, font=tag_font)[2]) + 34
 
 
-def render(filename: str, title: str, subtitle: str, tags: tuple[str, ...], accent: str) -> None:
+def draw_card(title: str, subtitle: str, tags: tuple[str, ...], accent: str, loading: bool) -> Image.Image:
     image = Image.new("RGB", (W, H), "#07111f")
     draw = ImageDraw.Draw(image)
     draw.rounded_rectangle((1, 1, W - 2, H - 2), radius=22, outline="#1e506c", width=2)
@@ -61,7 +64,32 @@ def render(filename: str, title: str, subtitle: str, tags: tuple[str, ...], acce
         draw.text((x + 17, y + 6), tag, font=tag_font, fill="#dbeafe")
         x += width + 10
 
-    image.save(OUT / filename, optimize=True)
+    if loading:
+        for i in range(3):
+            cx = x + 10 + i * 12
+            draw.ellipse((cx, y + 11, cx + 6, y + 17), fill=accent)
+
+    return image
+
+
+def render(filename: str, title: str, subtitle: str, tags: tuple[str, ...], accent: str) -> None:
+    frames = []
+    for k in range(len(tags) + 1):
+        loading = k < len(tags)
+        frames.append(draw_card(title, subtitle, tags[:k], accent, loading))
+    # Hold the fully revealed card before the loop restarts.
+    for _ in range(14):
+        frames.append(draw_card(title, subtitle, tags, accent, False))
+
+    frames[0].save(
+        OUT / filename,
+        save_all=True,
+        append_images=frames[1:],
+        duration=[260] * len(tags) + [90] + [140] * 14,
+        loop=0,
+        optimize=True,
+        disposal=2,
+    )
 
 
 OUT.mkdir(parents=True, exist_ok=True)
