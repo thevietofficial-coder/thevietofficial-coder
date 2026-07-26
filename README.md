@@ -25,11 +25,11 @@ I'm currently learning **Deep Learning, NLP, LLMs, AI Agents, and MLOps**, and I
 
 ## Technical toolkit
 
-<img src="assets/toolkit-cards/toolkit-ai-ml.png?v=2" alt="AI and Machine Learning skills: Python, PyTorch, TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, and OpenCV" width="100%" />
+<img src="assets/toolkit-cards/toolkit-ai-ml.png?v=3" alt="AI and Machine Learning skills: Python, PyTorch, TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, and OpenCV" width="100%" />
 
-<img src="assets/toolkit-cards/toolkit-languages-web.png?v=2" alt="Languages and web skills: C++, Java, JavaScript, Next.js, and WordPress" width="100%" />
+<img src="assets/toolkit-cards/toolkit-languages-web.png?v=3" alt="Languages and web skills: C++, Java, JavaScript, Next.js, and WordPress" width="100%" />
 
-<img src="assets/toolkit-cards/toolkit-tools-hardware.png?v=2" alt="Tools, design and hardware skills: Git, GitHub, Photoshop, Canva, and Raspberry Pi" width="100%" />
+<img src="assets/toolkit-cards/toolkit-tools-hardware.png?v=3" alt="Tools, design and hardware skills: Git, GitHub, Photoshop, Canva, and Raspberry Pi" width="100%" />
 
 ## GitHub activity
 
