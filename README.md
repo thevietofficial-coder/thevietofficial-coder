@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/github-profile-banner-animated.gif" alt="Animated banner: Bùi Hoàng Việt, AI Engineer building LLM, RAG, and Computer Vision applications" width="100%" />
+  <img src="assets/github-profile-banner-animated.gif?v=2" alt="Animated banner: Bùi Hoàng Việt, AI Engineer building LLM, RAG, and Computer Vision applications" width="100%" />
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/now-status.gif" alt="Animated current focus: building LLM and RAG applications, learning AI agents and MLOps, exploring computer vision" width="560" />
+  <img src="assets/now-status.gif?v=2" alt="Animated current focus: building LLM and RAG applications, learning AI agents and MLOps, exploring computer vision" width="560" />
 </p>
 
 ## About me
@@ -30,11 +30,11 @@ I'm currently training as an AI Engineer through **VinUni's AI20K program (Cohor
 
 ## Technical toolkit
 
-<img src="assets/toolkit-cards/toolkit-ai-ml.gif?v=2" alt="AI and Machine Learning skills appearing one by one: Python, PyTorch, TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, OpenCV, YOLOv8, Hugging Face, Gymnasium, and Jupyter" width="100%" />
+<img src="assets/toolkit-cards/toolkit-ai-ml.gif?v=3" alt="AI and Machine Learning skills appearing one by one: Python, PyTorch, TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, OpenCV, YOLOv8, Hugging Face, Gymnasium, and Jupyter" width="100%" />
 
-<img src="assets/toolkit-cards/toolkit-languages-web.gif?v=2" alt="Languages and web skills appearing one by one: C++, Java, JavaScript, Next.js, WordPress, and Streamlit" width="100%" />
+<img src="assets/toolkit-cards/toolkit-languages-web.gif?v=3" alt="Languages and web skills appearing one by one: C++, Java, JavaScript, Next.js, WordPress, and Streamlit" width="100%" />
 
-<img src="assets/toolkit-cards/toolkit-tools-hardware.gif?v=2" alt="Tools, design and hardware skills appearing one by one: Git, GitHub, Photoshop, Canva, Raspberry Pi, Arduino, ROS2, and pytest" width="100%" />
+<img src="assets/toolkit-cards/toolkit-tools-hardware.gif?v=3" alt="Tools, design and hardware skills appearing one by one: Git, GitHub, Photoshop, Canva, Raspberry Pi, Arduino, ROS2, and pytest" width="100%" />
 
 ## GitHub activity
 
