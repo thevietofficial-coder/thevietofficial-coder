@@ -58,7 +58,7 @@ DQN agent for CartPole-v1 with the replay buffer, target network, and TD-target 
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=thevietofficial-coder&hide_border=true&background=070910&stroke=22D3EE&ring=22D3EE&fire=8B5CF6&currStreakLabel=22D3EE" alt="Bùi Hoàng Việt's GitHub streak" width="100%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=thevietofficial-coder&hide_border=true&background=070910&stroke=22D3EE&ring=22D3EE&fire=8B5CF6&currStreakLabel=22D3EE&currStreakNum=F8FAFC&sideNums=E2E8F0&sideLabels=94A3B8&dates=64748B" alt="Bùi Hoàng Việt's GitHub streak" width="100%" />
 </p>
 
 Explore my [public repositories](https://github.com/thevietofficial-coder?tab=repositories) and [recent public activity](https://github.com/thevietofficial-coder?tab=overview).
