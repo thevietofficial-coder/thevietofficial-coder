@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="assets/ai-illustration-animated.gif" alt="Animated neural network illustration" width="48%" />
-  <img src="assets/coding-animation.gif" alt="Animated code editor typing a RAG pipeline" width="48%" />
+  <img src="assets/ai-illustration-animated.gif?v=2" alt="Animated illustration of a glowing energy core with particles orbiting on rings" width="48%" />
+  <img src="assets/coding-animation.gif?v=2" alt="Animated matrix-style terminal typing out a model training log" width="48%" />
 </p>
 
 <p align="center">
@@ -30,11 +30,11 @@ I'm currently training as an AI Engineer through **VinUni's AI20K program (Cohor
 
 ## Technical toolkit
 
-<img src="assets/toolkit-cards/toolkit-ai-ml.gif" alt="AI and Machine Learning skills appearing one by one: Python, PyTorch, TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, and OpenCV" width="100%" />
+<img src="assets/toolkit-cards/toolkit-ai-ml.gif?v=2" alt="AI and Machine Learning skills appearing one by one: Python, PyTorch, TensorFlow, Keras, scikit-learn, NumPy, Pandas, Matplotlib, OpenCV, YOLOv8, Hugging Face, Gymnasium, and Jupyter" width="100%" />
 
-<img src="assets/toolkit-cards/toolkit-languages-web.gif" alt="Languages and web skills appearing one by one: C++, Java, JavaScript, Next.js, and WordPress" width="100%" />
+<img src="assets/toolkit-cards/toolkit-languages-web.gif?v=2" alt="Languages and web skills appearing one by one: C++, Java, JavaScript, Next.js, WordPress, and Streamlit" width="100%" />
 
-<img src="assets/toolkit-cards/toolkit-tools-hardware.gif" alt="Tools, design and hardware skills appearing one by one: Git, GitHub, Photoshop, Canva, and Raspberry Pi" width="100%" />
+<img src="assets/toolkit-cards/toolkit-tools-hardware.gif?v=2" alt="Tools, design and hardware skills appearing one by one: Git, GitHub, Photoshop, Canva, Raspberry Pi, Arduino, ROS2, and pytest" width="100%" />
 
 ## GitHub activity
 

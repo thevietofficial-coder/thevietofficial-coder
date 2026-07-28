@@ -18,21 +18,24 @@ CARDS = (
         "toolkit-ai-ml.gif",
         "AI & Machine Learning",
         "MODELS, RETRIEVAL, AND GENERATIVE AI APPLICATIONS",
-        ("Python", "PyTorch", "TensorFlow", "Keras", "scikit-learn", "NumPy", "Pandas", "Matplotlib", "OpenCV"),
+        (
+            "Python", "PyTorch", "TensorFlow", "Keras", "scikit-learn", "NumPy", "Pandas",
+            "Matplotlib", "OpenCV", "YOLOv8", "Hugging Face", "Gymnasium", "Jupyter",
+        ),
         "#22d3ee",
     ),
     (
         "toolkit-languages-web.gif",
         "Languages & Web",
         "CORE LANGUAGES AND WEB DELIVERY",
-        ("C++", "Java", "JavaScript", "Next.js", "WordPress"),
+        ("C++", "Java", "JavaScript", "Next.js", "WordPress", "Streamlit"),
         "#a78bfa",
     ),
     (
         "toolkit-tools-hardware.gif",
         "Tools, Design & Hardware",
         "BUILD, VERSION, DESIGN, AND DEPLOY TO THE EDGE",
-        ("Git", "GitHub", "Photoshop", "Canva", "Raspberry Pi"),
+        ("Git", "GitHub", "Photoshop", "Canva", "Raspberry Pi", "Arduino", "ROS2", "pytest"),
         "#f59e0b",
     ),
 )

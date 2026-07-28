@@ -1,10 +1,11 @@
-"""Generate an original animated neural-network illustration for the profile top.
+"""Generate an original animated "energy core" AI illustration.
 
-Visual language matches the hero banner: dark navy base, fine technical
-grid, atmospheric glow, and traveling signal pulses along a node graph.
+A completely different visual language from the node-graph version:
+warm magenta/gold/violet jewel tones, a radial nebula backdrop, and
+particles orbiting a pulsing core on tilted elliptical rings.
 """
 
-from math import sin, pi
+from math import cos, sin, pi
 from pathlib import Path
 import random
 
@@ -14,38 +15,27 @@ from PIL import Image, ImageDraw
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "assets" / "ai-illustration-animated.gif"
 W, H = 480, 280
-FRAMES = 30
-BG = "#07111f"
-GRID = "#0b2035"
+FRAMES = 48
+CENTER = (W // 2, H // 2 + 6)
 
-random.seed(7)
+BG_OUTER = "#04010a"
+BG_INNER = "#2b0b3f"
+CORE_GOLD = "#fbbf24"
+CORE_MAGENTA = "#ec4899"
 
-# Nodes laid out in a loose oval "brain" silhouette, row by row.
-ROWS = (3, 5, 6, 5, 3)
-CENTER = (240, 148)
-RX, RY = 165, 95
-NODES = []
-for r, count in enumerate(ROWS):
-    row_y = CENTER[1] + (r - (len(ROWS) - 1) / 2) * (2 * RY / (len(ROWS) - 1))
-    span = RX * (1 - abs(r - (len(ROWS) - 1) / 2) / (len(ROWS) / 2) * 0.35)
-    for c in range(count):
-        t = c / (count - 1) if count > 1 else 0.5
-        row_x = CENTER[0] + (t - 0.5) * 2 * span
-        jitter_x = random.uniform(-6, 6)
-        jitter_y = random.uniform(-5, 5)
-        NODES.append((row_x + jitter_x, row_y + jitter_y))
+PARTICLE_COLORS = ("#fbbf24", "#ec4899", "#8b5cf6", "#fb7185")
 
-# Connect each node to its nearest few neighbours to form a mesh.
-EDGES = []
-for i, a in enumerate(NODES):
-    dists = sorted(
-        ((j, (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) for j, b in enumerate(NODES) if j != i),
-        key=lambda item: item[1],
-    )
-    for j, _ in dists[:3]:
-        edge = tuple(sorted((i, j)))
-        if edge not in EDGES:
-            EDGES.append(edge)
+random.seed(11)
+STARS = [
+    (random.uniform(0, W), random.uniform(0, H), random.uniform(0.4, 1.0))
+    for _ in range(70)
+]
+
+RINGS = (
+    {"rx": 70, "ry": 26, "tilt": -0.25, "count": 4, "speed": 1.0, "trail": 5},
+    {"rx": 118, "ry": 40, "tilt": 0.18, "count": 6, "speed": -0.7, "trail": 6},
+    {"rx": 168, "ry": 54, "tilt": -0.1, "count": 7, "speed": 0.5, "trail": 7},
+)
 
 
 def hex_to_rgb(value: str) -> tuple[int, int, int]:
@@ -54,54 +44,77 @@ def hex_to_rgb(value: str) -> tuple[int, int, int]:
 
 
 def blend(base: tuple[int, int, int], accent: tuple[int, int, int], t: float) -> tuple[int, int, int]:
+    t = max(0.0, min(1.0, t))
     return tuple(int(base[c] + (accent[c] - base[c]) * t) for c in range(3))
 
 
-BASE_RGB = hex_to_rgb(BG)
-CYAN_RGB = hex_to_rgb("#22d3ee")
-PURPLE_RGB = hex_to_rgb("#a78bfa")
+OUTER_RGB = hex_to_rgb(BG_OUTER)
+INNER_RGB = hex_to_rgb(BG_INNER)
+GOLD_RGB = hex_to_rgb(CORE_GOLD)
+MAGENTA_RGB = hex_to_rgb(CORE_MAGENTA)
+PARTICLE_RGB = [hex_to_rgb(c) for c in PARTICLE_COLORS]
+
+
+def draw_background(draw: ImageDraw.ImageDraw) -> None:
+    max_r = 300
+    for r in range(max_r, 0, -4):
+        t = 1 - r / max_r
+        color = blend(OUTER_RGB, INNER_RGB, t * t)
+        draw.ellipse(
+            (CENTER[0] - r, CENTER[1] - r * 0.75, CENTER[0] + r, CENTER[1] + r * 0.75),
+            fill=color,
+        )
+    for x, y, brightness in STARS:
+        c = int(120 + 100 * brightness)
+        draw.point((x, y), fill=(c, c, min(255, c + 25)))
+
+
+def orbit_position(ring: dict, index: int, phase: float) -> tuple[float, float, float]:
+    angle = 2 * pi * ((phase * ring["speed"]) + index / ring["count"])
+    x = CENTER[0] + ring["rx"] * cos(angle)
+    depth = sin(angle + ring["tilt"])
+    y = CENTER[1] + ring["ry"] * depth
+    return x, y, depth
 
 
 def frame(index: int) -> Image.Image:
-    image = Image.new("RGB", (W, H), BG)
+    image = Image.new("RGB", (W, H), BG_OUTER)
     draw = ImageDraw.Draw(image)
     phase = index / FRAMES
+    draw_background(draw)
 
-    for x in range(0, W, 30):
-        draw.line((x, 0, x, H), fill=GRID, width=1)
-    for y in range(0, H, 30):
-        draw.line((0, y, W, y), fill=GRID, width=1)
-
-    for radius in range(190, 10, -10):
-        t = 0.05 * (1 - radius / 190)
+    for ring in RINGS:
         draw.ellipse(
-            (CENTER[0] - radius, CENTER[1] - radius, CENTER[0] + radius, CENTER[1] + radius),
-            fill=blend(BASE_RGB, CYAN_RGB, t),
+            (
+                CENTER[0] - ring["rx"], CENTER[1] - ring["ry"],
+                CENTER[0] + ring["rx"], CENTER[1] + ring["ry"],
+            ),
+            outline=blend(OUTER_RGB, MAGENTA_RGB, 0.22),
+            width=1,
         )
 
+    pulse = 0.5 + 0.5 * sin(2 * pi * phase * 2)
+    for r in range(46, 6, -3):
+        t = 0.35 * (1 - r / 46) * (0.6 + 0.4 * pulse)
+        color = blend(OUTER_RGB, blend(MAGENTA_RGB, GOLD_RGB, 0.5), t)
+        draw.ellipse((CENTER[0] - r, CENTER[1] - r, CENTER[0] + r, CENTER[1] + r), fill=color)
+    core_r = 13 + 3 * pulse
     draw.ellipse(
-        (CENTER[0] - RX - 14, CENTER[1] - RY - 14, CENTER[0] + RX + 14, CENTER[1] + RY + 14),
-        outline="#16425d",
-        width=1,
+        (CENTER[0] - core_r, CENTER[1] - core_r, CENTER[0] + core_r, CENTER[1] + core_r),
+        fill=blend(MAGENTA_RGB, GOLD_RGB, pulse),
     )
 
-    for n, (i, j) in enumerate(EDGES):
-        a, b = NODES[i], NODES[j]
-        draw.line((a, b), fill="#16425d", width=1)
-        progress = (phase + n / len(EDGES)) % 1
-        px = a[0] + (b[0] - a[0]) * progress
-        py = a[1] + (b[1] - a[1]) * progress
-        color = "#22d3ee" if n % 2 == 0 else "#a78bfa"
-        draw.ellipse((px - 3, py - 3, px + 3, py + 3), fill=color)
-
-    for i, (nx, ny) in enumerate(NODES):
-        pulse = 0.5 + 0.5 * sin(2 * pi * phase + i * 0.7)
-        accent_rgb = CYAN_RGB if i % 3 else PURPLE_RGB
-        core = blend(BASE_RGB, accent_rgb, 0.4 + 0.3 * pulse)
-        r = 5 + 2 * pulse
-        draw.ellipse((nx - r, ny - r, nx + r, ny + r), fill=core, outline=(
-            "#67e8f9" if i % 3 else "#c4b5fd"
-        ), width=1)
+    for ri, ring in enumerate(RINGS):
+        for i in range(ring["count"]):
+            base_color = PARTICLE_RGB[(ri + i) % len(PARTICLE_RGB)]
+            for trail in range(ring["trail"], 0, -1):
+                trail_phase = phase - trail * 0.006
+                x, y, depth = orbit_position(ring, i, trail_phase)
+                behind = depth < 0
+                size = 3.4 if trail == ring["trail"] else 2.2
+                fade = 1 - trail / (ring["trail"] + 1)
+                color = blend(OUTER_RGB, base_color, fade * (0.5 if behind else 1.0))
+                draw.ellipse((x - size, y - size, x + size, y + size), fill=color)
 
     return image
 
@@ -111,7 +124,7 @@ images[0].save(
     OUTPUT,
     save_all=True,
     append_images=images[1:],
-    duration=90,
+    duration=70,
     loop=0,
     optimize=True,
     disposal=2,
