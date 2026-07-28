@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/thevietofficial-coder"><img src="https://img.shields.io/badge/GitHub-thevietofficial--coder-0B1220?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub profile" /></a>
-  <img src="https://img.shields.io/badge/Open_to-Collaboration_%2F_Opportunities-0B1220?style=flat-square&logo=target&logoColor=38BDF8" alt="Open to AI, ML, and Generative AI collaboration" />
+  <a href="https://github.com/thevietofficial-coder"><img src="https://img.shields.io/badge/GitHub-thevietofficial--coder-070910?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub profile" /></a>
+  <img src="https://img.shields.io/badge/Open_to-Collaboration_%2F_Opportunities-070910?style=flat-square&logo=target&logoColor=22D3EE" alt="Open to AI, ML, and Generative AI collaboration" />
 </p>
 
 <p align="center">
@@ -53,12 +53,12 @@ DQN agent for CartPole-v1 with the replay buffer, target network, and TD-target 
 ## GitHub activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=thevietofficial-coder&show_icons=true&hide_border=true&count_private=true&bg_color=0B1220&title_color=38BDF8&text_color=E2E8F0&icon_color=22D3EE" alt="Bùi Hoàng Việt's GitHub stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thevietofficial-coder&layout=compact&hide_border=true&bg_color=0B1220&title_color=38BDF8&text_color=E2E8F0" alt="Bùi Hoàng Việt's most used languages" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=thevietofficial-coder&show_icons=true&hide_border=true&count_private=true&bg_color=070910&title_color=22D3EE&text_color=E2E8F0&icon_color=22D3EE" alt="Bùi Hoàng Việt's GitHub stats" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thevietofficial-coder&layout=compact&hide_border=true&bg_color=070910&title_color=22D3EE&text_color=E2E8F0" alt="Bùi Hoàng Việt's most used languages" height="165" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=thevietofficial-coder&hide_border=true&background=0B1220&stroke=38BDF8&ring=22D3EE&fire=A78BFA&currStreakLabel=38BDF8" alt="Bùi Hoàng Việt's GitHub streak" width="100%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=thevietofficial-coder&hide_border=true&background=070910&stroke=22D3EE&ring=22D3EE&fire=8B5CF6&currStreakLabel=22D3EE" alt="Bùi Hoàng Việt's GitHub streak" width="100%" />
 </p>
 
 Explore my [public repositories](https://github.com/thevietofficial-coder?tab=repositories) and [recent public activity](https://github.com/thevietofficial-coder?tab=overview).
@@ -66,7 +66,7 @@ Explore my [public repositories](https://github.com/thevietofficial-coder?tab=re
 ## Resume / CV
 
 <p>
-  <a href="resume/Bui-Hoang-Viet-CV.pdf"><img src="https://img.shields.io/badge/View_CV-Open-0B1220?style=for-the-badge&logo=readme&logoColor=38BDF8" alt="View Bùi Hoàng Việt's CV" /></a>
+  <a href="resume/Bui-Hoang-Viet-CV.pdf"><img src="https://img.shields.io/badge/View_CV-Open-070910?style=for-the-badge&logo=readme&logoColor=22D3EE" alt="View Bùi Hoàng Việt's CV" /></a>
 </p>
 
 ## Let's connect
@@ -74,17 +74,17 @@ Explore my [public repositories](https://github.com/thevietofficial-coder?tab=re
 I'm open to internships, collaboration, and practical AI/ML/Generative AI projects.
 
 <p>
-  <a href="mailto:thevietofficial@gmail.com"><img src="https://img.shields.io/badge/Email-thevietofficial%40gmail.com-0B1220?style=flat-square&logo=gmail&logoColor=22D3EE" alt="Email Bùi Hoàng Việt" /></a>
-  <a href="https://www.linkedin.com/in/buihoangviet-ai/"><img src="https://img.shields.io/badge/LinkedIn-buihoangviet--ai-0B1220?style=flat-square&logo=linkedin&logoColor=38BDF8" alt="LinkedIn Bùi Hoàng Việt" /></a>
-  <a href="https://github.com/thevietofficial-coder"><img src="https://img.shields.io/badge/GitHub-thevietofficial--coder-0B1220?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub thevietofficial-coder" /></a>
+  <a href="mailto:thevietofficial@gmail.com"><img src="https://img.shields.io/badge/Email-thevietofficial%40gmail.com-070910?style=flat-square&logo=gmail&logoColor=22D3EE" alt="Email Bùi Hoàng Việt" /></a>
+  <a href="https://www.linkedin.com/in/buihoangviet-ai/"><img src="https://img.shields.io/badge/LinkedIn-buihoangviet--ai-070910?style=flat-square&logo=linkedin&logoColor=22D3EE" alt="LinkedIn Bùi Hoàng Việt" /></a>
+  <a href="https://github.com/thevietofficial-coder"><img src="https://img.shields.io/badge/GitHub-thevietofficial--coder-070910?style=flat-square&logo=github&logoColor=22D3EE" alt="GitHub thevietofficial-coder" /></a>
 </p>
 
 <details>
 <summary>Also find me on</summary>
 <p>
-  <a href="https://www.instagram.com/ho_ngviet.04/"><img src="https://img.shields.io/badge/Instagram-%40ho__ngviet.04-0B1220?style=flat-square&logo=instagram&logoColor=A78BFA" alt="Instagram Bùi Hoàng Việt" /></a>
-  <a href="https://www.tiktok.com/@thevietofficial"><img src="https://img.shields.io/badge/TikTok-%40thevietofficial-0B1220?style=flat-square&logo=tiktok&logoColor=22D3EE" alt="TikTok thevietofficial" /></a>
-  <a href="https://www.youtube.com/@englishwithvictor04"><img src="https://img.shields.io/badge/YouTube-%40englishwithvictor04-0B1220?style=flat-square&logo=youtube&logoColor=FF0000" alt="YouTube englishwithvictor04" /></a>
+  <a href="https://www.instagram.com/ho_ngviet.04/"><img src="https://img.shields.io/badge/Instagram-%40ho__ngviet.04-070910?style=flat-square&logo=instagram&logoColor=8B5CF6" alt="Instagram Bùi Hoàng Việt" /></a>
+  <a href="https://www.tiktok.com/@thevietofficial"><img src="https://img.shields.io/badge/TikTok-%40thevietofficial-070910?style=flat-square&logo=tiktok&logoColor=22D3EE" alt="TikTok thevietofficial" /></a>
+  <a href="https://www.youtube.com/@englishwithvictor04"><img src="https://img.shields.io/badge/YouTube-%40englishwithvictor04-070910?style=flat-square&logo=youtube&logoColor=FF0000" alt="YouTube englishwithvictor04" /></a>
 </p>
 </details>
 
