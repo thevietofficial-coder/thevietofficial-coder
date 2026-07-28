@@ -1,14 +1,13 @@
-"""Generate an original animated "matrix terminal" coding illustration.
+"""Generate an animated "glass terminal" coding illustration.
 
-A completely different visual language from the syntax-highlighted
-editor version: black background, falling green matrix rain, and a
-translucent terminal panel typing out a live model-training log.
+Uses the same aurora-glass material as the banner/toolkit cards: a
+soft blurred indigo/violet/cyan wash behind a frosted terminal panel
+typing out a live model-training log.
 """
 
 from pathlib import Path
-import random
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,73 +15,63 @@ OUTPUT = ROOT / "assets" / "coding-animation.gif"
 W, H = 480, 280
 MONO = "C:/Windows/Fonts/consola.ttf"
 
-BLACK = (0, 2, 1)
-RAIN_CHARS = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ<>/*+-="
-RAIN_FONT_SIZE = 15
-COLS = W // RAIN_FONT_SIZE
-TRAIL = 9
+BASE_BG = (7, 9, 16, 255)
+WASH = ((99, 102, 241), (34, 211, 238), (139, 92, 246))
+PANEL_BOX = (18, 18, W - 18, H - 18)
 
-random.seed(3)
-COL_SPEED = [random.uniform(0.5, 1.6) for _ in range(COLS)]
-COL_OFFSET = [random.uniform(0, H) for _ in range(COLS)]
+LABEL = (34, 211, 238)
+PROMPT = (167, 139, 250)
+PLAIN = (226, 232, 240)
+MUTED = (148, 163, 184)
+DONE = (110, 231, 183)
 
 LOG_LINES = (
-    ("$ python train.py", (120, 255, 160)),
-    ("Loading dataset... done", (90, 200, 130)),
-    ("Epoch 1/5  [##--------] loss: 1.842", (60, 255, 140)),
-    ("Epoch 2/5  [####------] loss: 1.203", (60, 255, 140)),
-    ("Epoch 3/5  [######----] loss: 0.874", (60, 255, 140)),
-    ("Epoch 4/5  [########--] loss: 0.512", (60, 255, 140)),
-    ("Epoch 5/5  [##########] loss: 0.291", (60, 255, 140)),
-    ("Training complete", (170, 255, 210)),
+    ("$ python train.py", PROMPT),
+    ("Loading dataset... done", MUTED),
+    ("Epoch 1/5  [##--------] loss: 1.842", LABEL),
+    ("Epoch 2/5  [####------] loss: 1.203", LABEL),
+    ("Epoch 3/5  [######----] loss: 0.874", LABEL),
+    ("Epoch 4/5  [########--] loss: 0.512", LABEL),
+    ("Epoch 5/5  [##########] loss: 0.291", LABEL),
+    ("Training complete", DONE),
 )
 
-PANEL_BOX = (14, 14, W - 14, H - 14)
 
-
-def rain_font(size: int) -> ImageFont.FreeTypeFont:
+def font(size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(MONO, size)
 
 
-def code_font(size: int) -> ImageFont.FreeTypeFont:
-    return ImageFont.truetype(MONO, size)
-
-
-def draw_rain(draw: ImageDraw.ImageDraw, frame_index: int, dim: bool) -> None:
-    font = rain_font(RAIN_FONT_SIZE)
-    for col in range(COLS):
-        x = col * RAIN_FONT_SIZE
-        head_y = (COL_OFFSET[col] + frame_index * COL_SPEED[col] * 6) % (H + TRAIL * RAIN_FONT_SIZE)
-        head_y -= TRAIL * RAIN_FONT_SIZE
-        for t in range(TRAIL):
-            y = head_y + t * RAIN_FONT_SIZE
-            if -RAIN_FONT_SIZE < y < H:
-                rng = random.Random((col * 977) + (frame_index // 3) + t)
-                ch = rng.choice(RAIN_CHARS)
-                brightness = 1 - t / TRAIL
-                g = int(70 + 150 * brightness)
-                color = (0, g if not dim else g // 3, int(g * 0.45) if not dim else g // 5)
-                draw.text((x, y), ch, font=font, fill=color)
+def build_background() -> Image.Image:
+    base = Image.new("RGBA", (W, H), BASE_BG)
+    wash = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    wdraw = ImageDraw.Draw(wash)
+    wdraw.ellipse((-80, -60, 220, 200), fill=(*WASH[0], 70))
+    wdraw.ellipse((W - 220, H - 160, W + 80, H + 80), fill=(*WASH[1], 65))
+    wdraw.ellipse((W // 2 - 120, -40, W // 2 + 160, 160), fill=(*WASH[2], 45))
+    wash = wash.filter(ImageFilter.GaussianBlur(38))
+    return Image.alpha_composite(base, wash)
 
 
 def total_chars() -> int:
     return sum(len(text) for text, _ in LOG_LINES)
 
 
-def draw_panel_and_text(image: Image.Image, revealed: int, cursor: bool) -> None:
-    overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    odraw = ImageDraw.Draw(overlay)
-    odraw.rounded_rectangle(PANEL_BOX, radius=12, fill=(2, 12, 8, 195), outline=(40, 220, 140, 255), width=2)
-    image.paste(Image.alpha_composite(image.convert("RGBA"), overlay).convert("RGB"), (0, 0))
+def draw_panel_and_text(background: Image.Image, revealed: int, cursor: bool) -> Image.Image:
+    panel = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    pdraw = ImageDraw.Draw(panel)
+    pdraw.rounded_rectangle(PANEL_BOX, radius=16, fill=(15, 18, 30, 150), outline=(255, 255, 255, 40), width=1)
+    image = Image.alpha_composite(background, panel).convert("RGB")
 
     draw = ImageDraw.Draw(image)
-    draw.ellipse((28, 26, 36, 34), fill=(255, 90, 90))
-    draw.text((46, 22), "training.log", font=code_font(12), fill=(150, 210, 180))
-    draw.line((28, 44, W - 28, 44), fill=(30, 120, 90))
+    for i, color in enumerate(((99, 102, 241), (34, 211, 238), (139, 92, 246))):
+        cx = 40 + i * 16
+        draw.ellipse((cx - 4, 30 - 4, cx + 4, 30 + 4), fill=color)
+    draw.text((90, 24), "train.py — session", font=font(12), fill=(180, 190, 205))
+    draw.line((32, 46, W - 32, 46), fill=(60, 70, 95))
 
-    font = code_font(15)
+    text_font = font(15)
     line_h = 25
-    x0, y0 = 30, 56
+    x0, y0 = 34, 58
     remaining = revealed
     cursor_x, cursor_y = x0, y0
 
@@ -90,33 +79,25 @@ def draw_panel_and_text(image: Image.Image, revealed: int, cursor: bool) -> None
         y = y0 + row * line_h
         take = text[: max(remaining, 0)]
         if take:
-            draw.text((x0, y), take, font=font, fill=color)
-        cursor_x, cursor_y = x0 + draw.textlength(take, font=font), y
+            draw.text((x0, y), take, font=text_font, fill=color)
+        cursor_x, cursor_y = x0 + draw.textlength(take, font=text_font), y
         remaining -= len(text)
         if remaining < 0 and not take:
             break
 
     if cursor:
-        draw.rectangle((cursor_x + 2, cursor_y + 1, cursor_x + 9, cursor_y + 17), fill=(120, 255, 170))
+        draw.rectangle((cursor_x + 2, cursor_y + 1, cursor_x + 9, cursor_y + 17), fill=(103, 232, 249))
 
-
-def frame(frame_index: int, revealed: int, cursor: bool, dim: bool = False) -> Image.Image:
-    image = Image.new("RGB", (W, H), BLACK)
-    draw = ImageDraw.Draw(image)
-    draw_rain(draw, frame_index, dim)
-    draw_panel_and_text(image, revealed, cursor)
     return image
 
 
 frames = []
+background = build_background()
 total = total_chars()
-f_index = 0
 for size in range(0, total + 1, 2):
-    frames.append(frame(f_index, size, True))
-    f_index += 1
+    frames.append(draw_panel_and_text(background, size, True))
 for blink in range(12):
-    frames.append(frame(f_index, total, blink % 2 == 0))
-    f_index += 1
+    frames.append(draw_panel_and_text(background, total, blink % 2 == 0))
 
 frames[0].save(
     OUTPUT,
