@@ -50,6 +50,11 @@ ResNet18 transfer-learning classifier across 38 plant leaf disease classes from 
 DQN agent for CartPole-v1 with the replay buffer, target network, and TD-target updates implemented from scratch instead of relying on a framework like Stable-Baselines3, backed by a pytest suite and a Streamlit demo.
 `Gymnasium` `Keras` `Streamlit` `pytest`
 
+## Certifications
+
+- **[Supervised Machine Learning: Regression and Classification](https://coursera.org/verify/QH9DLZVKTU0A)** — DeepLearning.AI & Stanford University (Andrew Ng), Oct 2024
+- **[Crash Course on Python](https://coursera.org/verify/L2JFNZ3S4ML7)** — Google, Mar 2024
+
 ## GitHub activity
 
 <p align="center">
