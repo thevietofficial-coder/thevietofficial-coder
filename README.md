@@ -1,9 +1,4 @@
 <p align="center">
-  <img src="assets/ai-illustration-animated.gif?v=3" alt="Animated illustration of a glowing energy core with particles orbiting on rings" width="48%" />
-  <img src="assets/coding-animation.gif?v=3" alt="Animated glass terminal typing out a model training log" width="48%" />
-</p>
-
-<p align="center">
   <img src="assets/github-profile-banner-animated.gif?v=2" alt="Animated banner: Bùi Hoàng Việt, AI Engineer building LLM, RAG, and Computer Vision applications" width="100%" />
 </p>
 
@@ -16,17 +11,26 @@
   <img src="assets/now-status.gif?v=2" alt="Animated current focus: building LLM and RAG applications, learning AI agents and MLOps, exploring computer vision" width="560" />
 </p>
 
-## About me
+## About Me
 
-I'm **Bùi Hoàng Việt**, building practical AI applications with a focus on **LLMs, Retrieval-Augmented Generation (RAG), and Computer Vision**.
+Hey, I'm **Bùi Hoàng Việt** — an AI Engineer passionate about turning ideas into intelligent, practical solutions.
 
-I'm currently training as an AI Engineer through **VinUni's AI20K program (Cohort 4)**, working hands-on with **Deep Learning, NLP, LLMs, AI Agents, and MLOps**, and I care about turning AI ideas into real, working applications rather than isolated experiments.
+I enjoy building AI-powered applications that combine machine learning, modern AI models, and software engineering to solve real-world problems. My interests include LLMs, Retrieval-Augmented Generation (RAG), AI Agents, and Computer Vision.
 
-## Now
+For me, engineering is more than making models work. It's about building reliable systems, solving meaningful problems, and delivering products that create real value.
 
-- Training in VinUni's AI20K AI Engineering program (Cohort 4), with hands-on exercises in LLM APIs, RAG, and agentic workflows.
-- Building AI applications, LLMs, RAG systems, and Computer Vision projects alongside the curriculum.
-- Open to collaborating on AI, Machine Learning, and Generative AI projects.
+## What I Do
+
+- **AI Engineering:** Build and integrate AI capabilities into practical applications.
+- **LLM & RAG:** Develop intelligent systems for knowledge retrieval and context-aware responses.
+- **AI Agents:** Explore tool calling, workflow automation, and autonomous task execution.
+- **Computer Vision:** Build solutions for image understanding, visual search, and image processing.
+
+## Current Focus
+
+Continuously improving my engineering skills, exploring new AI technologies, and building projects that bridge the gap between research and real-world applications.
+
+*Build with purpose. Learn by doing. Engineer what matters.*
 
 ## Technical toolkit
 
